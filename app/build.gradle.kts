@@ -6,11 +6,11 @@ plugins {
 }
 
 android {
-    namespace = "com.sami.topscanner"
+    namespace = "net.technical1.topscanner"
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.sami.topscanner"
+        applicationId = "net.technical1.topscanner"
         minSdk = 26
         targetSdk = 36
         versionCode = 1
