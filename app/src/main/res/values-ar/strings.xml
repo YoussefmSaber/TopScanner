@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">تـوب سـكانـيـر</string>
+    <string name="scan_doc">أضـغـط للتصويـر</string>
+    <string name="edit">تعديل</string>
+    <string name="save">حفظ</string>
+    <string name="prev">السابق</string>
+    <string name="next">التالي</string>
+    <string name="pdf_generated_open_it_with_a_pdf_viewer_from_files_app">تم إنشاء الملف - قم بتصفحة من خلال هاتفك.</string>
+    <string name="nothing_to_preview">لا يوجد شيء لعرضة</string>
+    <string name="save_document">حفظ الملف</string>
+    <string name="file_name_without_extension">أسم الملف (من دون نوعة)</string>
+    <string name="cancel">إلغاء</string>
+    <string name="last_modified_on">أخر تعديل كان في %1$s</string>
+    <string name="search_document">ابحث عن المستند</string>
+</resources>
