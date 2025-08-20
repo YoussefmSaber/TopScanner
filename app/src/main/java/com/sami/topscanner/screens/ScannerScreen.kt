@@ -14,6 +14,7 @@ import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.systemBarsPadding
@@ -41,6 +42,8 @@ import com.sami.topscanner.R
 import com.sami.topscanner.componant.DocumentItem
 import com.sami.topscanner.componant.InputField
 import com.sami.topscanner.manager.DocumentScanner
+import com.sami.topscanner.navigation.DetailsRoute
+import com.sami.topscanner.navigation.ResultRoute
 import com.sami.topscanner.ui.theme.Primary
 import com.sami.topscanner.viewModel.ScannerViewModel
 
@@ -101,6 +104,7 @@ fun ScannerScreen(
             placeholder = stringResource(R.string.search_document)
         )
         LazyColumn(
+            modifier = Modifier.weight(10f),
             verticalArrangement = Arrangement.spacedBy(12.dp),
             contentPadding = PaddingValues(16.dp)
         ) {
@@ -110,13 +114,12 @@ fun ScannerScreen(
                         .clickable(onClick = {
                             viewModel.selectDocument(document)
                             viewModel.loadDocumentForPreview()
-                            navController.navigate("result")
+                            navController.navigate(DetailsRoute)
                         }),
                     document = document
                 )
             }
         }
-        Spacer(Modifier.weight(1f))
         Row(
             modifier = Modifier
                 .fillMaxWidth()

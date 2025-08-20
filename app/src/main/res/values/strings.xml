@@ -2,9 +2,12 @@
     <string name="app_name">TopScanner</string>
     <string name="scan_doc">SCAN DOC</string>
     <string name="edit">Edit</string>
+    <string name="details">Details</string>
+    <string name="share">Share</string>
     <string name="save">Save</string>
     <string name="prev">Prev</string>
     <string name="next">Next</string>
+    <string name="share_via">Share via</string>
     <string name="pdf_generated_open_it_with_a_pdf_viewer_from_files_app">File generated — open it with your phone.</string>
     <string name="nothing_to_preview">Nothing to preview</string>
     <string name="save_document">Save document</string>

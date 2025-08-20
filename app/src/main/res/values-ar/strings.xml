@@ -4,8 +4,11 @@
     <string name="scan_doc">أضـغـط للتصويـر</string>
     <string name="edit">تعديل</string>
     <string name="save">حفظ</string>
+    <string name="details">التفاصيل</string>
+    <string name="share">المشاركة</string>
     <string name="prev">السابق</string>
     <string name="next">التالي</string>
+    <string name="share_via">المشاركة من خلال</string>
     <string name="pdf_generated_open_it_with_a_pdf_viewer_from_files_app">تم إنشاء الملف - قم بتصفحة من خلال هاتفك.</string>
     <string name="nothing_to_preview">لا يوجد شيء لعرضة</string>
     <string name="save_document">حفظ الملف</string>

@@ -59,6 +59,8 @@ import com.sami.topscanner.R
 import com.sami.topscanner.componant.InputField
 import com.sami.topscanner.model.DocumentFormat
 import com.sami.topscanner.manager.DocumentFileManager
+import com.sami.topscanner.navigation.ResultRoute
+import com.sami.topscanner.navigation.ScannerRoute
 import com.sami.topscanner.ui.theme.Primary
 import com.sami.topscanner.viewModel.ScannerViewModel
 import kotlinx.coroutines.launch
@@ -321,8 +323,8 @@ fun ResultScreen(
                         } else {
                             Toast.makeText(context, "Save failed", Toast.LENGTH_SHORT).show()
                         }
-                        navController.navigate("scanner") {
-                            popUpTo("result") { inclusive = true } // Adjust this
+                        navController.navigate(ScannerRoute) {
+                            popUpTo(ResultRoute) { inclusive = true } // Adjust this
                         }
                     }
                 }) {

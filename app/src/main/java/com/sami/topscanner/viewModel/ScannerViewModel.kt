@@ -1,5 +1,7 @@
 package com.sami.topscanner.viewModel
 
+import android.content.Context
+import android.content.Intent
 import android.net.Uri
 import android.util.Log
 import androidx.compose.runtime.getValue
@@ -8,6 +10,7 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.sami.topscanner.R
 import com.sami.topscanner.manager.DocumentFileManager
 import com.sami.topscanner.model.DocumentFormat
 import com.sami.topscanner.model.ScannedDocument
@@ -116,5 +119,16 @@ class ScannerViewModel(
         scannedImages = emptyList()
         pdfUri = null
         savedFiles = emptyList()
+    }
+
+    fun shareFile(context: Context, uri: Uri, mimeType: String) {
+        val shareIntent = Intent(Intent.ACTION_SEND).apply {
+            type = mimeType
+            putExtra(Intent.EXTRA_STREAM, uri)
+            addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION)
+        }
+
+        val chooser = Intent.createChooser(shareIntent, context.getString(R.string.share_via))
+        context.startActivity(chooser)
     }
 }
