@@ -79,19 +79,6 @@ TopScanner/
 5. Choose your preferred export format (**PDF**, **DOCX**, **PNG**, **JPG**)
 6. Save or share your scanned file
 
----
-
-## 🖼️ Example Output
-
-| Scan Type | Output Format |
-| --------- | ------------- |
-| Invoice   | PDF           |
-| Notes     | PNG           |
-| Forms     | JPG           |
-| Reports   | DOCX          |
-
----
-
 ## 🤝 Contributing
 
 Contributions are welcome!
